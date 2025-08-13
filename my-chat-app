@@ -1,3 +1,9 @@
-git add .render.yaml requirements.txt
-git commit -m "Switch to pip"
-git push origin main
+mkdir new_chat && cd new_chat
+git init
+cp ../PythonProject1/server.py .
+cp -r ../PythonProject1/static .
+# Создайте requirements.txt и .render.yaml как выше
+git add .
+git commit -m "Clean start"
+git remote add origin https://github.com/ваш_логин/new-chat-app.git
+git push -u origin main
